@@ -1,7 +1,15 @@
-import React from "react";
+import About from "@/components/About";
+import Introduction from "@/components/Introduction";
+import Projects from "@/components/Projects";
 
 const Homepage = () => {
-  return <div>Homepage</div>;
+  return (
+    <>
+      <Introduction />
+      <About />
+      <Projects />
+    </>
+  );
 };
 
 export default Homepage;
