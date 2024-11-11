@@ -9,6 +9,11 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        poppins: '"Poppins", sans-serif',
+        courgette: '"Courgette", cursive',
+        play: '"Play", sans-serif',
+      },
       colors: {},
     },
   },
