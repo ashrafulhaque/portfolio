@@ -14,6 +14,24 @@ module.exports = {
         courgette: '"Courgette", cursive',
         play: '"Play", sans-serif',
       },
+      animation: {
+        fadeIn: "fadeIn 1s ease-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 1s ease-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
       colors: {},
     },
   },

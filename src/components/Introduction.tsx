@@ -59,6 +59,7 @@ const Introduction = () => {
               <a
                 href="https://drive.google.com/file/d/1PTMB7pSfvcFDi5NeB-1adWQiUpbkH1H7/view?usp=drive_link"
                 className="btn btn-outline min-h-9 h-9 mt-6 ml-10 rounded-none"
+                target="_blank"
               >
                 View Resume
               </a>

@@ -13,13 +13,91 @@ import {
 const About = () => {
   return (
     <section className="py-5 px-5 lg:px-10" id="about">
-      <h2 className="font-play text-5xl py-6 font-bold text-center lg:text-left">
+      <h2 className="font-play text-5xl py-10  font-bold text-center">
         <span className="text-[#388beb] border-b-8 border-[#388beb]">
           About
         </span>{" "}
         Me
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div className="text-center">
+          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-3 gap-6 animate-fadeIn">
+            {[
+              {
+                icon: <FaReact size={35} />,
+                label: "React",
+                color: "text-blue-500",
+              },
+              {
+                icon: <SiNextdotjs size={35} />,
+                label: "Next.js",
+                color: "text-black",
+              },
+              {
+                icon: <SiTailwindcss size={35} />,
+                label: "Tailwind CSS",
+                color: "text-teal-400",
+              },
+              {
+                icon: <SiJavascript size={35} />,
+                label: "JavaScript",
+                color: "text-yellow-500",
+              },
+              {
+                icon: <FaNodeJs size={35} />,
+                label: "Node.js",
+                color: "text-green-500",
+              },
+              {
+                icon: <SiExpress size={35} />,
+                label: "Express.js",
+                color: "text-gray-500",
+              },
+              {
+                icon: <SiMongodb size={35} />,
+                label: "MongoDB",
+                color: "text-green-600",
+              },
+              {
+                icon: <SiHtml5 size={35} />,
+                label: "HTML5",
+                color: "text-orange-500",
+              },
+              {
+                icon: <SiCss3 size={35} />,
+                label: "CSS3",
+                color: "text-blue-600",
+              },
+              {
+                icon: <SiJson size={35} />,
+                label: "JSON",
+                color: "text-yellow-600",
+              },
+              {
+                icon: <FaDatabase size={35} />,
+                label: "SQL",
+                color: "text-purple-500",
+              },
+              {
+                icon: <FaGitAlt size={35} />,
+                label: "Git",
+                color: "text-orange-600",
+              },
+            ].map((tool, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center transform transition-transform duration-300 hover:scale-110"
+              >
+                <div className={`${tool.color} transition-colors duration-300`}>
+                  {tool.icon}
+                </div>
+                <p className="text-gray-700 mt-2 text-sm font-semibold">
+                  {tool.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
         <div className="lg:pr-10 text-gray-500 text-md text-justify leading-6">
           <p className="my-5">
             I'm a passionate web developer specializing in{" "}
@@ -47,75 +125,6 @@ const About = () => {
             </a>
             !
           </p>
-        </div>
-
-        <div className="text-center">
-          <p className="text-gray-500 mb-4">
-            Here are some of the tools I use regularly:
-          </p>
-
-          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-3 gap-6">
-            <div className="flex flex-col items-center">
-              <FaReact size={40} className="text-blue-500" />
-              <p className="text-gray-700 mt-2 text-sm font-semibold">React</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <SiNextdotjs size={40} className="text-black" />
-              <p className="text-gray-700 mt-2 text-sm font-semibold">
-                Next.js
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <SiTailwindcss size={40} className="text-teal-400" />
-              <p className="text-gray-700 mt-2 text-sm font-semibold">
-                Tailwind CSS
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <SiJavascript size={40} className="text-yellow-500" />
-              <p className="text-gray-700 mt-2 text-sm font-semibold">
-                JavaScript
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <FaNodeJs size={40} className="text-green-500" />
-              <p className="text-gray-700 mt-2 text-sm font-semibold">
-                Node.js
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <SiExpress size={40} className="text-gray-500" />
-              <p className="text-gray-700 mt-2 text-sm font-semibold">
-                Express.js
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <SiMongodb size={40} className="text-green-600" />
-              <p className="text-gray-700 mt-2 text-sm font-semibold">
-                MongoDB
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <SiHtml5 size={40} className="text-orange-500" />
-              <p className="text-gray-700 mt-2 text-sm font-semibold">HTML5</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <SiCss3 size={40} className="text-blue-600" />
-              <p className="text-gray-700 mt-2 text-sm font-semibold">CSS3</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <SiJson size={40} className="text-yellow-600" />
-              <p className="text-gray-700 mt-2 text-sm font-semibold">JSON</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <FaDatabase size={40} className="text-purple-500" />
-              <p className="text-gray-700 mt-2 text-sm font-semibold">SQL</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <FaGitAlt size={40} className="text-orange-600" />
-              <p className="text-gray-700 mt-2 text-sm font-semibold">Git</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
