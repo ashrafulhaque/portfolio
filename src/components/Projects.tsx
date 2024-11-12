@@ -46,10 +46,10 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-10 px-5 lg:px-12">
-      <h2 className="font-play text-5xl font-bold text-center mb-10">
-        <span className="text-[#388beb] border-b-8 border-[#388beb]">My</span>{" "}
-        Projects
+      <h2 className="font-play text-5xl font-bold text-center mb-5">
+        MY <span className="text-[#388beb]">PROJECTS</span>
       </h2>
+      <div className="divider divider-start divider-info">PROJECTS</div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (

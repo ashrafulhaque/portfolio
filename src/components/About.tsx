@@ -13,12 +13,10 @@ import {
 const About = () => {
   return (
     <section className="py-5 px-5 lg:px-10" id="about">
-      <h2 className="font-play text-5xl py-10  font-bold text-center">
-        <span className="text-[#388beb] border-b-8 border-[#388beb]">
-          About
-        </span>{" "}
-        Me
+      <h2 className="font-play text-5xl font-bold text-center mb-5">
+        <span className="text-[#388beb]">ABOUT</span> ME
       </h2>
+      <div className="divider divider-start divider-info">ABOUT</div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         <div className="text-center">
           <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-3 gap-6 animate-fadeIn">
