@@ -14,7 +14,7 @@ const Contact = () => {
               alt="Get in touch image"
             />
           </div>
-          <div className="mx-auto px-10 my-8 min-w-full">
+          <div className="mx-auto px-10 sm:px-5 my-8 min-w-full">
             <div className="flex gap-2 pt-3">
               <label className="form-control w-[50%]">
                 <div className="label">

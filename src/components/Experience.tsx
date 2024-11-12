@@ -15,13 +15,13 @@ const ExperienceCard: React.FC<{
   return (
     <div
       ref={ref}
-      className={`bg-white p-6 rounded-lg shadow-lg w-full max-w-md mx-auto opacity-0 transform translate-x-10 transition-all duration-1000 ease-out ${
+      className={`bg-white p-4 md:p-6 rounded-lg shadow-lg w-full max-w-md mx-auto opacity-0 transform translate-x-10 transition-all duration-1000 ease-out ${
         inView ? "opacity-100 -translate-x-0" : ""
       }`}
     >
       <div className="flex items-start">
         {index !== 0 && (
-          <div className="border-l-4 border-blue-500 h-full mr-6"></div>
+          <div className="border-l-4 border-blue-500 h-full mr-4 md:mr-6"></div>
         )}
         <div className="mb-2 flex flex-col gap-2">
           <h3 className="text-lg font-semibold text-blue-700">{title}</h3>
@@ -60,13 +60,16 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-10 px-5 lg:px-12 bg-[#FFF5EF]">
+    <section
+      id="experience"
+      className="py-10 px-4 sm:px-5 lg:px-12 bg-[#FFF5EF] overflow-x-hidden"
+    >
       <h2 className="font-play text-5xl font-bold text-center mb-5">
         MY <span className="text-[#388beb]">EXPERIENCE</span>
       </h2>
       <div className="divider divider-start divider-info">EXPERIENCE</div>
 
-      <div className="relative flex flex-col lg:flex-row gap-8 mt-10 max-w-5xl mx-auto">
+      <div className="relative flex flex-col lg:flex-row gap-6 sm:gap-8 mt-10 max-w-5xl mx-auto">
         {experiences.map((exp, index) => (
           <ExperienceCard
             key={index}
