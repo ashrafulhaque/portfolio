@@ -34,11 +34,11 @@ This portfolio highlights my best projects. Each project includes:
 
 ## 🌐 Live Demo
 
-You can view the live version of my portfolio here: [Live Portfolio](#https://portfolio-ashraful.vercel.app/)
+You can view the live version of my portfolio here: [Live Portfolio](https://portfolio-of-ashraful.vercel.app)
 
 ## 📫 Connect with Me
 
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/imashrafulhaque/)
+- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/imashrafulhaque)
 
 ## 🤝 Contributing
 
