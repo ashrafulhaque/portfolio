@@ -1,14 +1,6 @@
-import { FaCircle } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 
-const ExperienceCard = ({
-  title,
-  company,
-  duration,
-  description,
-  index,
-  totalExperiences,
-}) => {
+const ExperienceCard = ({ title, company, duration, description, index }) => {
   const { ref, inView } = useInView({
     threshold: 0.2,
     triggerOnce: false,
