@@ -7,17 +7,15 @@ const Footer = () => {
         <div>
           <h6 className="footer-title">Address</h6>
           <p>
-            <i className="fa-solid fa-location-dot"></i> Upazila ICT Officer
+            <i className="fa-solid fa-location-dot"></i> Department of ICT, ICT
+            Division
           </p>
           <p>
-            <i className="fa-solid fa-location-dot"></i> Upazila Office,
-            Department of ICT
+            <i className="fa-solid fa-location-dot"></i>
+            Ministry of Posts, Telecommunications and IT
           </p>
           <p>
-            <i className="fa-solid fa-earth-asia"></i> Atpara, Netrokona
-          </p>
-          <p>
-            <i className="fa-solid fa-earth-asia"></i>Bangladesh
+            <i className="fa-solid fa-earth-asia"></i>Dhaka, Bangladesh
           </p>
         </div>
         <nav>

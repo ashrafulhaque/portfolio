@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
@@ -71,6 +71,14 @@ const Navbar = () => {
                 Experience
               </a>
             </li>
+            <li>
+              <a
+                href="#contact"
+                onClick={(e) => handleSmoothScroll(e, "contact")}
+              >
+                Get in Touch
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -122,12 +130,13 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        <NavLink
-          to="/contact"
+        <a
+          href="#contact"
+          onClick={(e) => handleSmoothScroll(e, "contact")}
           className="btn btn-error btn-outline min-h-9 h-9"
         >
           Get in Touch
-        </NavLink>
+        </a>
       </div>
     </div>
   );
