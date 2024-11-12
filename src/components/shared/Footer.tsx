@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer justify-around bg-neutral text-neutral-content p-6">
+      <footer className="footer justify-around bg-[#22252C] text-neutral-content p-6">
         <div>
           <h6 className="footer-title">Address</h6>
           <p>
@@ -63,14 +63,14 @@ const Footer = () => {
             1712-345678
           </p>
           <p>
-            <i className="fa-solid fa-globe"></i> www.nfscarshop.com
+            <i className="fa-solid fa-globe"></i> www.ashrafulhaque.com
           </p>
           <p>
-            <i className="fa-solid fa-envelope"></i> contact@nfscarshop.com
+            <i className="fa-solid fa-envelope"></i> ashrafulhaque404@gmail.com
           </p>
         </div>
       </footer>
-      <div className="mx-auto text-center text-[15px] bg-slate-800 text-neutral-content py-4">
+      <div className="mx-auto text-center text-[15px] bg-[#22252C] text-neutral-content py-6 border-t-[1px] border-gray-600">
         <p>
           Copyright © {new Date().getFullYear()} Md. Ashraful Haque - All right
           reserved.

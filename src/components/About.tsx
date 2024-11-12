@@ -12,7 +12,7 @@ import {
 
 const About = () => {
   return (
-    <section className="py-5 px-5 lg:px-10" id="about">
+    <section className="py-10 px-5 lg:px-12 bg-[#FFF5EF]" id="about">
       <h2 className="font-play text-5xl font-bold text-center mb-5">
         <span className="text-[#388beb]">ABOUT</span> ME
       </h2>

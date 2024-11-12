@@ -1,48 +1,93 @@
-import { FaGraduationCap } from "react-icons/fa";
-
 const Education = () => {
   return (
-    <section id="education" className="py-10 px-5 lg:px-12 bg-gray-100">
+    <section id="education" className="py-10 px-5 lg:px-12 bg-[#fafafa]">
       <h2 className="font-play text-5xl font-bold text-center mb-5">
         MY <span className="text-[#388beb]">EDUCATION</span>
       </h2>
       <div className="divider divider-start divider-info">EDUCATION</div>
-
-      <div className="relative flex flex-col gap-10 mt-10 max-w-3xl mx-auto">
-        <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gray-300"></div>
-
-        <div className="relative flex items-start">
-          <div className="absolute -left-8 top-4 bg-blue-500 rounded-full p-2 text-white shadow-lg z-10">
-            <FaGraduationCap className="h-6 w-6" />
+      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+        <li>
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </svg>
           </div>
-          <div className="bg-white p-5 rounded-lg shadow-lg border-l-4 border-blue-500 w-80 ml-8">
+          <div className="timeline-start mb-10 md:text-end">
+            <time className="font-mono italic">2018</time>
             <h3 className="text-lg font-semibold text-blue-700">
               Jatiya Kabi Kazi Nazrul Islam University
             </h3>
             <p className="text-gray-700 font-medium">
               M.Sc., Computer Science and Engineering
             </p>
-            <p className="text-gray-500 text-sm">Passing Year: 2018</p>
             <p className="text-gray-500 text-sm">CGPA: 3.17 / 4.00</p>
           </div>
-        </div>
-
-        <div className="relative flex items-start">
-          <div className="absolute -right-8 top-4 bg-blue-500 rounded-full p-2 text-white shadow-lg z-10">
-            <FaGraduationCap className="h-6 w-6" />
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </svg>
           </div>
-          <div className="bg-white p-5 rounded-lg shadow-lg border-l-4 border-blue-500 w-80 mr-8 ml-auto">
+          <div className="timeline-end mb-10">
+            <time className="font-mono italic">2015</time>
             <h3 className="text-lg font-semibold text-blue-700">
               Jatiya Kabi Kazi Nazrul Islam University
             </h3>
             <p className="text-gray-700 font-medium">
               B.Sc. in Engineering, Computer Science and Engineering
             </p>
-            <p className="text-gray-500 text-sm">Passing Year: 2015</p>
             <p className="text-gray-500 text-sm">CGPA: 3.16 / 4.00</p>
           </div>
-        </div>
-      </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+          <div className="timeline-start mb-10 md:text-end">
+            <time className="font-mono italic">2011</time>
+            <h3 className="text-lg font-semibold text-blue-700">
+              Agricultural University College
+            </h3>
+            <p className="text-gray-700 font-medium">Science Group</p>
+            <p className="text-gray-500 text-sm">CGPA: 4.90 / 5.00</p>
+          </div>
+          <hr />
+        </li>
+      </ul>
     </section>
   );
 };

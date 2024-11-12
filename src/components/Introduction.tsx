@@ -5,13 +5,12 @@ import {
   FaStackOverflow,
   FaTwitter,
 } from "react-icons/fa";
-import { Button } from "./ui/button";
 
 const Introduction = () => {
   return (
     <>
       <section>
-        <div className="w-[90%] mx-auto max-w-screen-xl min-h-screen py-4">
+        <div className="w-[90%] mx-auto max-w-screen-xl min-h-screen pt-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 justify-center gap-10">
             <div className="font-semibold font-poppins sm:mt-10">
               <h3 className=" text-xl  text-[#7f7e81]">Hey! I'm,</h3>
