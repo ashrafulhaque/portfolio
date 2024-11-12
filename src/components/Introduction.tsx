@@ -66,7 +66,7 @@ const Introduction = () => {
             <div>
               <img
                 src="./about.jpg"
-                className="mask mask-circle mx-auto max-h-[400px]"
+                className="mask mask-circle mx-auto max-h-[400px] my-3"
                 alt="Get in touch image"
               />
             </div>
