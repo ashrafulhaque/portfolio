@@ -7,6 +7,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "noImplicitAny": false,
+    "allowJs": true,
+    "checkJs": false,
+    "skipLibCheck": true,
     "paths": {
       "@/*": ["./src/*"]
     }

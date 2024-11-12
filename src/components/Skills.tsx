@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Progress } from "@/components/ui/progress";
 
-const useInView = (ref) => {
+const useInView = (ref: React.RefObject<HTMLDivElement>) => {
   const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
@@ -27,8 +27,11 @@ const useInView = (ref) => {
   return isInView;
 };
 
-const SkillCategory = ({ title, skills }) => {
-  const ref = useRef(null);
+const SkillCategory: React.FC<{
+  title: string;
+  skills: { name: string; level: number }[];
+}> = ({ title, skills }) => {
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
 
   return (

@@ -1,6 +1,12 @@
 import { useInView } from "react-intersection-observer";
 
-const ExperienceCard = ({ title, company, duration, description, index }) => {
+const ExperienceCard: React.FC<{
+  title: string;
+  company: string;
+  duration: string;
+  description: string;
+  index: number;
+}> = ({ title, company, duration, description, index }) => {
   const { ref, inView } = useInView({
     threshold: 0.2,
     triggerOnce: false,
@@ -69,7 +75,6 @@ const Experience = () => {
             duration={exp.duration}
             description={exp.description}
             index={index}
-            totalExperiences={experiences.length}
           />
         ))}
       </div>

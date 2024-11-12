@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
-  const handleSmoothScroll = (e, targetId) => {
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
     const offset = 70;
