@@ -1,3 +1,14 @@
+import {
+  FaEnvelope,
+  FaGlobe,
+  FaLinkedin,
+  FaMobileAlt,
+  FaPhoneSquareAlt,
+  FaStackOverflow,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+
 const Footer = () => {
   return (
     <div>
@@ -19,50 +30,71 @@ const Footer = () => {
         <nav>
           <h6 className="footer-title">Social Links</h6>
           <a
-            className="link link-hover"
+            className="link link-hover inline-flex gap-1"
             href="https://www.linkedin.com/in/imashrafulhaque/"
             target="_blank"
           >
+            <span className="mt-1">
+              <FaLinkedin />
+            </span>
             Linkedin
           </a>
           <a
-            className="link link-hover"
+            className="link link-hover inline-flex gap-1"
             href="https://x.com/imashrafulhaque"
             target="_blank"
           >
+            <span className="mt-1">
+              <FaTwitter />
+            </span>
             Twitter
           </a>
-
           <a
-            className="link link-hover"
-            href="https://github.com/ashrafulhaque"
+            className="link link-hover inline-flex gap-1"
+            href="https://stackoverflow.com/users/3220092/ashraful-haque"
             target="_blank"
           >
-            Github
+            <span className="mt-1">
+              <FaStackOverflow />
+            </span>
+            Stack Overflow
           </a>
-
           <a
-            className="link link-hover"
+            className="link link-hover inline-flex gap-1"
             href="https://www.youtube.com/@troubleshootprogramming4452"
             target="_blank"
           >
+            <span className="mt-1">
+              <FaYoutube />
+            </span>
             Youtube
           </a>
         </nav>
         <div>
           <h6 className="footer-title">Contact</h6>
-          <p>
-            <i className="fa-solid fa-phone"></i> Phone: 555-555-5555
+          <p className="inline-flex gap-1">
+            <span className="mt-1">
+              <FaPhoneSquareAlt />
+            </span>
+            Phone: XXX-XXXXXX
           </p>
-          <p>
-            <i className="fa-solid fa-mobile-screen"></i> Mobile: +880
-            1712-345678
+          <p className="inline-flex gap-1">
+            <span className="mt-1">
+              <FaMobileAlt />
+            </span>
+            Mobile: +880 17XX-XXXXXX
           </p>
-          <p>
-            <i className="fa-solid fa-globe"></i> www.ashrafulhaque.com
+          <p className="inline-flex gap-1">
+            <span className="mt-1">
+              <FaGlobe />
+            </span>
+            https://portfolio-of-ashraful.vercel.app
           </p>
-          <p>
-            <i className="fa-solid fa-envelope"></i> ashrafulhaque404@gmail.com
+          <p className="inline-flex gap-1">
+            <span className="mt-1">
+              <FaEnvelope />
+            </span>
+            ashrafulhaque404@gmail.com
           </p>
         </div>
       </footer>

@@ -5,30 +5,23 @@ const ExperienceCard: React.FC<{
   company: string;
   duration: string;
   description: string;
-  index: number;
-}> = ({ title, company, duration, description, index }) => {
+}> = ({ title, company, duration, description }) => {
   const { ref, inView } = useInView({
-    threshold: 0.2,
     triggerOnce: false,
+    threshold: 0.1,
   });
 
   return (
     <div
       ref={ref}
-      className={`bg-white p-4 md:p-6 rounded-lg shadow-lg w-full max-w-md mx-auto opacity-0 transform translate-x-10 transition-all duration-1000 ease-out ${
-        inView ? "opacity-100 -translate-x-0" : ""
-      }`}
+      className={`bg-white p-6 rounded-lg shadow-lg transform transition-all duration-1000 ease-out
+        ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
     >
-      <div className="flex items-start">
-        {index !== 0 && (
-          <div className="border-l-4 border-blue-500 h-full mr-4 md:mr-6"></div>
-        )}
-        <div className="mb-2 flex flex-col gap-2">
-          <h3 className="text-lg font-semibold text-blue-700">{title}</h3>
-          <p className="text-gray-500 text-sm">{duration}</p>
-          <p className="text-gray-700 font-medium mb-2">{company}</p>
-          <p className="text-gray-700">{description}</p>
-        </div>
+      <div className="flex flex-col gap-2">
+        <h3 className="text-lg font-semibold text-blue-700">{title}</h3>
+        <p className="text-gray-500 text-sm">{duration}</p>
+        <p className="text-gray-700 font-medium mb-2">{company}</p>
+        <p className="text-gray-700">{description}</p>
       </div>
     </div>
   );
@@ -62,14 +55,14 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-10 px-4 sm:px-5 lg:px-12 bg-[#FFF5EF] overflow-x-hidden"
+      className="py-10 px-4 sm:px-6 lg:px-8 bg-[#FFF5EF]"
     >
       <h2 className="font-play text-5xl font-bold text-center mb-5">
         MY <span className="text-[#388beb]">EXPERIENCE</span>
       </h2>
       <div className="divider divider-start divider-info">EXPERIENCE</div>
 
-      <div className="relative flex flex-col lg:flex-row gap-6 sm:gap-8 mt-10 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 max-w-7xl mx-auto">
         {experiences.map((exp, index) => (
           <ExperienceCard
             key={index}
@@ -77,7 +70,6 @@ const Experience = () => {
             company={exp.company}
             duration={exp.duration}
             description={exp.description}
-            index={index}
           />
         ))}
       </div>

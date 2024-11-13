@@ -13,7 +13,7 @@ const Introduction = () => {
         <div className="w-[90%] mx-auto max-w-screen-xl min-h-screen pt-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 justify-center gap-10">
             <div className="font-semibold font-poppins mx-auto sm:mt-10">
-              <h3 className=" text-xl  text-[#7f7e81]">Hey! I'm,</h3>
+              <h3 className="text-xl text-[#7f7e81]">Hey! I'm,</h3>
               <h1 className="text-4xl sm:py-4 sm:text-5xl font-play leading-tight text-[#388beb]">
                 Md. Ashraful Haque
               </h1>

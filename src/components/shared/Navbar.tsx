@@ -87,7 +87,7 @@ const Navbar = () => {
 
         <Link
           to="/"
-          className="btn btn-ghost text-xl font-courgette hover:bg-inherit"
+          className="btn btn-ghost text-lg sm:text-xl font-courgette hover:bg-inherit"
         >
           <span className="font-bold">Md.Ashraful Haque</span>
         </Link>

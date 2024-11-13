@@ -9,13 +9,15 @@ import Skills from "@/components/Skills";
 const Homepage = () => {
   return (
     <>
-      <Introduction />
-      <About />
-      <Projects />
-      <Education />
-      <Skills />
-      <Experience />
-      <Contact />
+      <main>
+        <Introduction />
+        <About />
+        <Projects />
+        <Education />
+        <Skills />
+        <Experience />
+        <Contact />
+      </main>
     </>
   );
 };
